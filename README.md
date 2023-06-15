@@ -13,3 +13,9 @@
 ### -HTML: Used to create the structure and layout of the calculator.
 ### -CSS: Used to style the calculator and make it visually appealing.
 ### -JavaScript: Used to implement the calculator's functionality and perform mathematical operations.
+***
+## Usage : 
+### -Open the index.html file in a web browser.
+### -Enter the first number in the "Number 1" input field.
+### -Enter the second number in the "Number 2" input field.
+### -Select the desired operation from the available options (Addition, Subtraction, Multiplication, or Division).
