@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <style>
+        #number1{
+            color: white;
+            background-color: black;
+        }
+        #number2{
+            color: white;
+            background-color: black;
+        }
+        #tanuj{
+            color: red;
+        }
+        #datta{
+            color: red;
+        }
+        #venkat{
+            color: red;
+        }
+        #bilvesh{
+            color: red;
+        }
+        #result{
+            color: red;
+        }
+    </style>
+    <script>
+        function tanuj()
+        {
+            var a=parseInt(document.getElementById('number1').value);
+            var b=parseInt(document.getElementById('number2').value);
+            var ansD = document.getElementById("answer");
+            ansD.value = a*b;
+        }
+        function Datta()
+        {
+            
+            var a= parseInt(document.getElementById('number1').value);
+            var b=parseInt(document.getElementById('number2').value);
+            var ansD = document.getElementById("answer");
+            ansD.value = a/b;
+        }
+        function venkat()
+        {
+            
+            var a=(document.getElementById('number1').value);
+            var b=(document.getElementById('number2').value);
+            var ansD = document.getElementById("answer");
+            ansD.value = a-b;
+        }
+        function bilvesh()
+        {
+            
+            var a=(document.getElementById('number1').value);
+            var b=(document.getElementById('number2').value);
+            var ansD = document.getElementById("answer");
+            ansD.value = a+b;
+        }
+
+    </script>
+</head>
+<body>
+   <h1> Tanuj Datta's Calculator : </h1>
+   <h4> 1st Number:</h4>
+    <input type="number" name="number" id="number1"><br><br>
+   <h4> 2nd Number :</h4>
+    <input type="number" name="number" id="number2"><br><br>
+    <input id="tanuj" type ="submit" value="Multiply" onclick="return tanuj()">
+    <input id="datta" type="submit" value="Divide" onclick="return Datta() ">
+    <input id="venkat" type="submit" value="Subtract" onclick="return venkat()">
+    <input id="bilvesh" type="submit" value="Addition" onclick="return bilvesh()"><br><br>
+    <b  id="result">The Result is : <input type="text" name="answer" id="answer"></b><br>
+       
+</body>
+</html>
